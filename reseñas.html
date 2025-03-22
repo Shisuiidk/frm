@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Veterinarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .review-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .review-form h2 {
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 97%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reseñas de Veterinarios</h1>
+    </header>
+    <main>
+        <div class="review-form">
+            <h2>Deja tu reseña</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Tu Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="vet-name">Nombre del Veterinario:</label>
+                    <input type="text" id="vet-name" name="vet-name" placeholder="Nombre del veterinario" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Calificación:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Selecciona una calificación</option>
+                        <option value="1">1 - Muy Malo</option>
+                        <option value="2">2 - Malo</option>
+                        <option value="3">3 - Regular</option>
+                        <option value="4">4 - Bueno</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Tu Reseña:</label>
+                    <textarea id="review" name="review" rows="5" placeholder="Escribe tu reseña aquí..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Reseña</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
